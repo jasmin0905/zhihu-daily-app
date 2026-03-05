@@ -2,10 +2,11 @@
 //  AppDelegate.m
 //  zhihu-daily-app
 //
-//  Created by mac on 2026/2/25.
+//  实现AppDelegate.h的方法，配置主窗口和根视图控制器
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -13,28 +14,28 @@
 
 @implementation AppDelegate
 
-
+//应用启动完成后可调用，初始化窗口和根视图控制器
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 创建UIWindow
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //设置UIWindow的背景颜色
+    self.window.backgroundColor = [UIColor whiteColor];
+    //创建homeVC
+    ViewController *homeVC = [[ViewController alloc] init];
+    //创建导航控制器，以首页为根控制器
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    //将导航控制器设置为window的根视图控制器
+    self.window.rootViewController = nav;
+    //让window成为keyWindow并可见
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
 
-#pragma mark - UISceneSession lifecycle
 
 
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
 
 
 @end

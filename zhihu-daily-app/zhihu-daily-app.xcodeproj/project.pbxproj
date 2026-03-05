@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0207435C87BAD36E775613D /* Pods_zhihu_daily_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59431B4C4C012ADAC33375E1 /* Pods_zhihu_daily_app.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		031C492196FC826011FD5D42 /* Pods-zhihu-daily-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu-daily-app.release.xcconfig"; path = "Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app.release.xcconfig"; sourceTree = "<group>"; };
 		0439BD812F4F20CD00811290 /* zhihu-daily-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zhihu-daily-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59431B4C4C012ADAC33375E1 /* Pods_zhihu_daily_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhihu_daily_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25B82C1CE16A2EBD01D7190 /* Pods-zhihu-daily-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu-daily-app.debug.xcconfig"; path = "Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0207435C87BAD36E775613D /* Pods_zhihu_daily_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				0439BD832F4F20CD00811290 /* zhihu-daily-app */,
 				0439BD822F4F20CD00811290 /* Products */,
+				74D9F1319E6525AB7B9542C7 /* Pods */,
+				9356523DEEBBB38F2137B78A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		74D9F1319E6525AB7B9542C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F25B82C1CE16A2EBD01D7190 /* Pods-zhihu-daily-app.debug.xcconfig */,
+				031C492196FC826011FD5D42 /* Pods-zhihu-daily-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9356523DEEBBB38F2137B78A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59431B4C4C012ADAC33375E1 /* Pods_zhihu_daily_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0439BD992F4F20CF00811290 /* Build configuration list for PBXNativeTarget "zhihu-daily-app" */;
 			buildPhases = (
+				5B785DD26533CD4F71A3FA60 /* [CP] Check Pods Manifest.lock */,
 				0439BD7D2F4F20CD00811290 /* Sources */,
 				0439BD7E2F4F20CD00811290 /* Frameworks */,
 				0439BD7F2F4F20CD00811290 /* Resources */,
+				04A0E2E044B60E738948E67B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +107,6 @@
 				0439BD832F4F20CD00811290 /* zhihu-daily-app */,
 			);
 			name = "zhihu-daily-app";
-			packageProductDependencies = (
-			);
 			productName = "zhihu-daily-app";
 			productReference = 0439BD812F4F20CD00811290 /* zhihu-daily-app.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A0E2E044B60E738948E67B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B785DD26533CD4F71A3FA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zhihu-daily-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0439BD7D2F4F20CD00811290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +209,7 @@
 /* Begin XCBuildConfiguration section */
 		0439BD9A2F4F20CF00811290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25B82C1CE16A2EBD01D7190 /* Pods-zhihu-daily-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -170,6 +241,7 @@
 		};
 		0439BD9B2F4F20CF00811290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031C492196FC826011FD5D42 /* Pods-zhihu-daily-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
