@@ -2,7 +2,7 @@
 //  News.m
 //  zhihu-daily-app
 //
-//  Created by mac on 2026/3/4.
+//  新闻数据模型实现
 //
 
 #import "News.h"

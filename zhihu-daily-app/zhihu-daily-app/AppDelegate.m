@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,7 @@
     //设置UIWindow的背景颜色
     self.window.backgroundColor = [UIColor whiteColor];
     //创建homeVC
-    ViewController *homeVC = [[ViewController alloc] init];
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
     //创建导航控制器，以首页为根控制器
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVC];
     //将导航控制器设置为window的根视图控制器

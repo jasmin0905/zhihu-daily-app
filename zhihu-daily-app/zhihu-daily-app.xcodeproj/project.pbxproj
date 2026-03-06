@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0207435C87BAD36E775613D /* Pods_zhihu_daily_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59431B4C4C012ADAC33375E1 /* Pods_zhihu_daily_app.framework */; };
+		8DF2ABD3FBDDEED81D4A21F1 /* Pods_zhihu_daily_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C181F5B8823623E761BEF0 /* Pods_zhihu_daily_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		031C492196FC826011FD5D42 /* Pods-zhihu-daily-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu-daily-app.release.xcconfig"; path = "Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app.release.xcconfig"; sourceTree = "<group>"; };
 		0439BD812F4F20CD00811290 /* zhihu-daily-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zhihu-daily-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59431B4C4C012ADAC33375E1 /* Pods_zhihu_daily_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhihu_daily_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F25B82C1CE16A2EBD01D7190 /* Pods-zhihu-daily-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu-daily-app.debug.xcconfig"; path = "Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app.debug.xcconfig"; sourceTree = "<group>"; };
+		4E818A147729418E401E5D00 /* Pods-zhihu-daily-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu-daily-app.release.xcconfig"; path = "Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app.release.xcconfig"; sourceTree = "<group>"; };
+		64D7506D7832ECCED11B72F0 /* Pods-zhihu-daily-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu-daily-app.debug.xcconfig"; path = "Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app.debug.xcconfig"; sourceTree = "<group>"; };
+		D5C181F5B8823623E761BEF0 /* Pods_zhihu_daily_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhihu_daily_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0207435C87BAD36E775613D /* Pods_zhihu_daily_app.framework in Frameworks */,
+				8DF2ABD3FBDDEED81D4A21F1 /* Pods_zhihu_daily_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +55,8 @@
 			children = (
 				0439BD832F4F20CD00811290 /* zhihu-daily-app */,
 				0439BD822F4F20CD00811290 /* Products */,
-				74D9F1319E6525AB7B9542C7 /* Pods */,
-				9356523DEEBBB38F2137B78A /* Frameworks */,
+				9A5DE9C39D32024D7B0FF65C /* Pods */,
+				08F2B5636CAB1B78E8ADBD87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,22 +68,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74D9F1319E6525AB7B9542C7 /* Pods */ = {
+		08F2B5636CAB1B78E8ADBD87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F25B82C1CE16A2EBD01D7190 /* Pods-zhihu-daily-app.debug.xcconfig */,
-				031C492196FC826011FD5D42 /* Pods-zhihu-daily-app.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		9356523DEEBBB38F2137B78A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				59431B4C4C012ADAC33375E1 /* Pods_zhihu_daily_app.framework */,
+				D5C181F5B8823623E761BEF0 /* Pods_zhihu_daily_app.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A5DE9C39D32024D7B0FF65C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64D7506D7832ECCED11B72F0 /* Pods-zhihu-daily-app.debug.xcconfig */,
+				4E818A147729418E401E5D00 /* Pods-zhihu-daily-app.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,11 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0439BD992F4F20CF00811290 /* Build configuration list for PBXNativeTarget "zhihu-daily-app" */;
 			buildPhases = (
-				5B785DD26533CD4F71A3FA60 /* [CP] Check Pods Manifest.lock */,
+				47FE4B219FBFC813EC546906 /* [CP] Check Pods Manifest.lock */,
 				0439BD7D2F4F20CD00811290 /* Sources */,
 				0439BD7E2F4F20CD00811290 /* Frameworks */,
 				0439BD7F2F4F20CD00811290 /* Resources */,
-				04A0E2E044B60E738948E67B /* [CP] Embed Pods Frameworks */,
+				6CE9999EBAD5DC9BCE364A8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,24 +154,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04A0E2E044B60E738948E67B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B785DD26533CD4F71A3FA60 /* [CP] Check Pods Manifest.lock */ = {
+		47FE4B219FBFC813EC546906 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,6 +176,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6CE9999EBAD5DC9BCE364A8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhihu-daily-app/Pods-zhihu-daily-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,7 +208,7 @@
 /* Begin XCBuildConfiguration section */
 		0439BD9A2F4F20CF00811290 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F25B82C1CE16A2EBD01D7190 /* Pods-zhihu-daily-app.debug.xcconfig */;
+			baseConfigurationReference = 64D7506D7832ECCED11B72F0 /* Pods-zhihu-daily-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -227,21 +226,24 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OBJROOT = /Users/mac/Desktop/BuildProducts/Intermediates;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xu.zhihu-daily-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = /Users/mac/Desktop/BuildProducts/SharedPrecompiledHeaders;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SYMROOT = /Users/mac/Desktop/BuildProducts;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0439BD9B2F4F20CF00811290 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 031C492196FC826011FD5D42 /* Pods-zhihu-daily-app.release.xcconfig */;
+			baseConfigurationReference = 4E818A147729418E401E5D00 /* Pods-zhihu-daily-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -259,14 +261,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OBJROOT = /Users/mac/Desktop/BuildProducts/Intermediates;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xu.zhihu-daily-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = /Users/mac/Desktop/BuildProducts/SharedPrecompiledHeaders;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SYMROOT = /Users/mac/Desktop/BuildProducts;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
