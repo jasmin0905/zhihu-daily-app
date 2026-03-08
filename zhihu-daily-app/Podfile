@@ -1,13 +1,14 @@
-platform :ios, '9.0'
+# 强制使用官方 CDN，不从 GitHub 克隆
+source 'https://cdn.cocoapods.org/'
 
+platform :ios, '12.0'
 target 'zhihu-daily-app' do
   use_frameworks!
-
-  pod 'Masonry'
-  pod 'AFNetworking'
-  pod 'MJRefresh'
-  pod 'MBProgressHUD'
-  pod 'JSONModel'
-  pod 'SDWebImage'
-  pod 'FMDB'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'MJRefresh', '~> 3.7.6'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'JSONModel', '~> 1.8.0'
+  pod 'SDWebImage', '~> 5.18.3'
+  pod 'FMDB', '~> 2.7.12'
 end
