@@ -57,7 +57,7 @@
         _titleLabel = [[UILabel alloc]init];
         _titleLabel.font = [UIFont systemFontOfSize:17//字体
                                              weight:UIFontWeightSemibold];
-        _titleLabel.numberOfLines = 0;//多行显示
+        _titleLabel.numberOfLines = 2;//适配Cell高度
         _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;//文本过长时，末尾省略号
     }
     return _titleLabel;

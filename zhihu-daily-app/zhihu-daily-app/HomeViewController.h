@@ -2,7 +2,7 @@
 //  HomeViewController.h
 //  zhihu-daily-app
 //
-//  Created by mac on 2026/3/4.
+//  首页控制器，展示顶部Banner轮播和下方新闻列表
 //
 
 #import <UIKit/UIKit.h>
