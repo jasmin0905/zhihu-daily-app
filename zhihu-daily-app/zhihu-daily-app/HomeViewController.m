@@ -9,6 +9,7 @@
 #import "NewsCell.h"//复用
 #import "NetworkManager.h"//复用
 #import "News.h"//复用
+#import "DetailViewController.h"
 #import <SDWebImage/SDWebImage.h>//复用图片加载库
 #import <MJRefresh/MJRefresh.h>//下拉刷新
 //匿名分类
@@ -248,8 +249,10 @@ UIScrollViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
      // 获取被点击 cell 对应的 News 对象
      News *news = self.newsList[indexPath.item];
-     // 创建一个空白的详情页控制器
-     UIViewController *detailVC = [[UIViewController alloc] init];
+     // 创建项目中专门的详情页控制器
+     DetailViewController *detailVC = [[DetailViewController alloc] init];
+     //传递新闻数据
+     detailVC.news = news;
      // 设置详情页的标题为新闻标题
      detailVC.title = news.title;
      // 设置详情页的背景色为白色
