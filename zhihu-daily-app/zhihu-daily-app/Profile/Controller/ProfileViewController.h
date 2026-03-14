@@ -2,7 +2,7 @@
 //  ProfileViewController.h
 //  zhihu-daily-app
 //
-//  Created by mac on 2026/3/4.
+//  个人页面控制器，处理用户信息展示与登出逻辑
 //
 
 #import <UIKit/UIKit.h>

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UserModel : NSObject
 ///当前是否已登录
 @property (nonatomic, assign, readonly) BOOL isLoggedIn;
+//用户名属性
+@property (nonatomic, copy)NSString *username;
 ///获取单例
 + (instancetype)sharedModel;
 ///登录（伪）
